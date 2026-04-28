@@ -1,6 +1,106 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html lang="id">
+<head><!DOCTYPE html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Endi & Febri Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1,h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+/* COVER */
+.cover {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #d63384;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ANIMASI */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HATI */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: #ff4d6d;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to { transform: translateY(100vh); }
+}
+
+/* MUSIC BUTTON */
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d63384;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <h2>Kepada Yth</h2>
+  <h3 id="guest"></h3>
+  <h1>Endi & Febri</h1>
+  <p>Sabtu, 13 Juni 2026</p>
+  <button onclick="openInvite()">Buka Undangan</button>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+</audio>
+
+<div class="music-btn" onclick
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Endi & Febri Wedding</title>
